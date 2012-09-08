@@ -6,3 +6,8 @@ Hand: Kh Qh 6h 2h 9h (Flush)
 
 
 Written in Javascript, requires nodejs to run.  Unit test written using mocha (http://visionmedia.github.com/mocha/)
+
+
+For randomly generated test cases to manually check run:
+
+node manual_test.js

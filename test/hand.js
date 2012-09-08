@@ -75,16 +75,20 @@ describe('handfactory', function () {
         it('rank-pair-qs', function () {
             assert.equal(handFactory.fromString('qs 4c 5d qh As').rank(), 'Pair of Queens');
         });
+        it('rank-pair-js', function () {
+            assert.equal(handFactory.fromString('Jd Jh 2c 3h 5d').rank(), 'Pair of Jacks');
+        });
+
 
         // 2 Pair
         it('rank-2pair-5q', function () {
-            assert.equal(handFactory.fromString('qs kc 5d qh 5s').rank(), '2 Pair');
+            assert.equal(handFactory.fromString('qs kc 5d qh 5s').rank(), '2 Pair, Queens and Fives');
         });
         it('rank-2pair-kq', function () {
-            assert.equal(handFactory.fromString('qs kc 5d qh ks').rank(), '2 Pair');
+            assert.equal(handFactory.fromString('qs kc 5d qh ks').rank(), '2 Pair, Kings and Queens');
         });
         it('rank-2pair-a2', function () {
-            assert.equal(handFactory.fromString('As 2c Ad qh 2s').rank(), '2 Pair');
+            assert.equal(handFactory.fromString('As 2c Ad qh 2s').rank(), '2 Pair, Aces and Twos');
         });
 
         // High Card
