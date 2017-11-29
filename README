@@ -5,7 +5,7 @@ Hand: Kh Kc 3s 3h 2d (2 Pair)
 Hand: Kh Qh 6h 2h 9h (Flush)
 
 
-Written in Javascript, requires nodejs to run.  Unit test written using mocha (http://visionmedia.github.com/mocha/)
+Written in Javascript, requires nodejs to run.  Unit test written using mocha (http://mochajs.org/)
 
 
 For randomly generated test cases to manually check run:
